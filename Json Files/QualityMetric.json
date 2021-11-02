@@ -1,0 +1,12 @@
+[
+{
+"name":"metric 1",
+"unit":"second",
+"dimentionid":"1"
+},
+{
+"name":"metric 2",
+"unit":"unknow",
+"dimentionid":"2"
+}
+]

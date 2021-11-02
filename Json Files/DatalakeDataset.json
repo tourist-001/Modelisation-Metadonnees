@@ -1,0 +1,182 @@
+[
+{
+"id":"172",
+"description":"Lung Cancer DataSet",
+"connectionURL":"https://www.kaggle.com/yusufdede/lung-cancer-dataset",
+"size":"1704",
+"administrator":"Yan ZHAO",
+"filenameExtension":"csv",
+"sensitivitymarkid":"1"
+},
+{
+"id":"173",
+"description":"Daily and Total Vaccination for COVID-19 in the World",
+"connectionURL":"https://www.kaggle.com/gpreda/covid-world-vaccination-progress",
+"size":"3000657",
+"administrator":"Yan ZHAO",
+"filenameExtension":"csv",
+"sensitivitymarkid":"2"
+},
+{
+"id":"174",
+"description":"Predict whether the cancer is benign or malignant",
+"connectionURL":"https://www.kaggle.com/uciml/breast-cancer-wisconsin-data",
+"size":"125204",
+"administrator":"Yan ZHAO",
+"filenameExtension":"csv",
+"sensitivitymarkid":"3"
+},
+{
+"id":"175",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"176",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"177",
+"description":"Lung Cancer dataset based on OMOP DataSet",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"178",
+"description":"Dataset provides main health indicators for local communities. Designed for public health professionals and members of the community. Contains over 200 measures for each of the 3,141 United States counties. Time period of reported data varies.",
+"connectionURL":"unknow",
+"size":"15 Mo",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"2"
+},
+{
+"id":"179",
+"description":"Classify the health of a fetus as Normal, Suspect or Pathological using CTG data.",
+"connectionURL":"unknow",
+"size":"223 KB",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"2"
+},
+{
+"id":"180",
+"description":"sensor reading",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"181",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"182",
+"description":"datas about country vaccinations",
+"connectionURL":"https://www.kaggle.com/search?q=covid+vaccine",
+"size":"46987449B",
+"administrator":"Yan ZHAO",
+"filenameExtension":"csv",
+"sensitivitymarkid":"3"
+},
+{
+"id":"162",
+"description":"MIMIC-III is a large, freely-available database comprising deidentified health-related data associated with over forty thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012. ",
+"connectionURL":"User Id=user1;Password=*******;Data Source=mimic",
+"size":"6.2 GB",
+"administrator":"Ann Smith",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"3"
+},
+{
+"id":"163",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"164",
+"description":"Time series create by CASTOR process",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"165",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"166",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"69",
+"description":"Audio report of a cancer analysis",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"unknow",
+"filenameExtension":"unknow",
+"sensitivitymarkid":"4"
+},
+{
+"id":"70",
+"description":"Chest X-Ray Images (Pneumonia)",
+"connectionURL":"https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/metadata",
+"size":"2405631Ko",
+"administrator":"Yan ZHAO",
+"filenameExtension":"zip",
+"sensitivitymarkid":"2"
+},
+{
+"id":"71",
+"description":"unknow",
+"connectionURL":"unknow",
+"size":"unknow",
+"administrator":"v",
+"filenameExtension":"jpg",
+"sensitivitymarkid":"3"
+},
+{
+"id":"72",
+"description":"The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image.",
+"connectionURL":"https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia",
+"size":"5320297B",
+"administrator":"Yan ZHAO",
+"filenameExtension":"jpg",
+"sensitivitymarkid":"3"
+}
+]
