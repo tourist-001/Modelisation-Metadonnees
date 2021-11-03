@@ -3,8 +3,8 @@ This project is the part PostgreSql of datastore benchmark development
 
 
 # Tools
--Docker
--Jupyter Notebook
+- Docker
+- Jupyter Notebook
 
 
 
