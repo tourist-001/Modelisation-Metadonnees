@@ -54,3 +54,9 @@ And to analyse a numeric attribute, I deleted the "AnalysisNumericFeatures" beca
 ![image](images/Related%20Work.png)
 
 ## Files in the folder
+- `Json Files/`: the inserted data in the database
+- `images/`: the images
+- `implementation of the model`: the implementation of tables according to the model
+- `Example of insertion`: one example of inserting data to Source table;
+- `Queries`: the queries demanded
+- `Execution Time`: the time of running a query
