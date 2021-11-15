@@ -2,15 +2,15 @@
 SELECT us.lastName, us.firstName, samp.name
 FROM Sample samp, Userr us
 WHERE samp.userId = us.id
-AND us.lastName = "Merlin"
-AND us.firstName = "Croain";
+AND us.lastName = 'Merlin'
+AND us.firstName = 'Croain';
 
 -- Tous les samples qui sont dans un Dataset
 SELECT samp.URI, samp.name
 FROM Sample samp, Includ inc, Dataset D
 WHERE samp.URI = inc.sampleURI
 AND inc.DatasetId = D.id
-AND D.name = "";
+AND D.name = '';
 
 -- Tous les opération qui peut se suivre
 SELECT *
@@ -40,72 +40,7 @@ FROM Operation op, Contains c
 WHERE c.operationId = op.id
 GROUP BY op.id
 
--- Tous les samples les plus proches d'un sample défini
-
-
-/*
--- tous les sources et ses samples
-(SELECT s.URI as source, samp.URI as sampleURI, samp.name as sampName
-FROM Sample samp, Source s
-WHERE samp.sourceURI = s.URI)T1
-
--- tous les sources et ses sources
-(SELECT *
-FROM sourceFrom sf
-LEFT JOIN sourceFrom sf2
-ON sf.sourcefromURI = sf2.sourceURI
-LEFT JOIN sourceFrom sf3
-ON sf2.sourcefromURI = sf3.sourceURI
-LEFT JOIN sourceFrom sf4
-ON sf3.sourcefromURI = sf4.sourceURI)T2
-
--- tous les sample de la distance 1
-SELECT 
-FROM T1, sourceFrom sf
-WHERE T1.sampname = ""
-AND T1.URI = */
-
-
--- solution2
--- tous les samples de la distance 1
-SELECT *
-FROM (
-SELECT samp.URI, samp.name
-FROM Sample samp, Source s
-WHERE s.URI = samp.sourceURI
-AND s.URI = (SELECT s2.URI
-             FROM Source s2, Sample samp2
-			 WHERE samp2.name = ""
-			 AND samp2.sourceURI = s2.URI)
-AND samp.name <> "";
-
-UNION
-
--- tous les samples de la distance 2
-
-SELECT samp4.URI, samp4.name
-FROM 
--- la source parente de la source actuelle
-(SELECT sf.sourcefromURI as source_parente
-FROM Source s, sourceFrom sf
-WHERE s.URI = (SELECT s2.URI
-               FROM Source s2, Sample samp2
-			   WHERE samp2.name = ""
-			   AND samp2.sourceURI = s2.URI)
-AND s.URI = sf.sourceURI) T1,
-
--- la source enfante de la source actuelle
-(SELECT sf.sourceURI as source_enfante
-FROM Source s1, sourceFrom sf1
-WHERE s1.URI = (SELECT s2.URI
-               FROM Source s3, Sample samp3
-			   WHERE samp3.name = ""
-			   AND samp3.sourceURI = s3.URI)
-AND s1.URI = sf1.sourcefromURI) T2,
-Sample samp4
-WHERE samp4.sourceURI = T1._parente
-OR samp4.sourceURI = T2.source_enfante)
-limit 50;
+-- Tous les samples les plus proches d'un sample défini (non résolu)
 
 -- solution 3
 WITH RECURSIVE dist AS (
@@ -118,7 +53,7 @@ WITH RECURSIVE dist AS (
 		JOIN dist ON 
 )
 
--- Tous les samples accessible par un utilisateur en sachant que un utilisateur a accès un sample si il a inséré la données ou quelqu'un d'un group auquel il appartient ou que la licence est publique
+-- Tous les samples accessible par un utilisateur en sachant que un utilisateur a accès un sample si il a inséré la données ou quelqu'un d'un group auquel il appartient ou que la licence est publique (non résolu)
 SELECT
 FROM Sample samp, Userr u; hasLicense hasl, 
 WHERE u.lastName = "Merlin"
@@ -126,7 +61,7 @@ AND u.firstName = "Croain"
 AND (samp.userId = u.id
 OR (u.id =)
 OR ())
--- Tous les Dataset les plus proches
+-- Tous les Dataset les plus proches ( non résolu)
 
 -- Toute les source qui possèdent le même tag
 SELECT s.URI
